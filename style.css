@@ -29,8 +29,13 @@ nav ul{display:flex;gap:1.5rem;list-style:none}
 .cards{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:2rem}
 .card{background:#fff;border:1px solid #e1e4e8;border-radius:6px;padding:1.5rem;box-shadow:0 2px 4px rgba(0,0,0,.03)}
 .skills-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem;list-style:none}
-.skills-list li{background:#e8f0fe;border-radius:4px;padding:.5rem .75rem;font-weight:600;text-align:center}
+.
+skills-list li{background:#e8f0fe;border-radius:4px;padding:.5rem .75rem;font-weight:600;text-align:center}
 
 /* Footer */
 footer{background:#f0f0f0;text-align:center;padding:2rem}
 footer small{color:#666}
+
+
+/* Restore hero image */
+#hero {background:url('images/hero.jpg') center/cover no-repeat}
