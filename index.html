@@ -1,105 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filipe Andrade | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filipeandrade.com – Marketplace</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== Header / Nav ===== -->
-  <header>
-    <div class="container">
-      <h1 class="logo">Filipe Andrade</h1>
-      <nav>
-        <ul id="navbar">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="menu‑toggle" aria-label="Toggle navigation">&#9776;</button>
-    </div>
-  </header>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="logo">F</div>
+    <div class="site-name">filipeandrade.com</div>
+    <input type="text" class="search" placeholder="Suchen…">
+    <a href="#" class="login">Login</a>
+  </nav>
 
-  <!-- ===== Hero ===== -->
-  <section id="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h2>Engineer · Problem Solver · Outdoor Enthusiast</h2>
-      <p>Building clean, efficient web solutions while chasing peaks in the Swiss Alps.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm Filipe, a Zurich‑based full‑stack developer with 5+ years of experience turning complex challenges into elegant products. When I'm not coding, you'll find me on a climbing wall or exploring new coffee spots.</p>
-    </div>
-  </section>
-
-  <!-- ===== Projects ===== -->
-  <section id="projects" class="section alt">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Swiss Trails</h3>
-          <p>A responsive hiking‑trail planner built with React, Mapbox, and the SwissTopo API.</p>
-          <a href="https://github.com/Wilhofstrasse/swiss-trails" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="card">
-          <h3>Budgeteer</h3>
-          <p>A PWA that helps freelancers track expenses offline and sync when online.</p>
-          <a href="https://github.com/Wilhofstrasse/budgeteer" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="card">
-          <h3>CodeKlatsch</h3>
-          <p>A minimal blogging platform optimised for performance and accessibility.</p>
-          <a href="https://codeklatsch.dev" target="_blank" rel="noopener">Live ↗</a>
-        </div>
+  <!-- Hero section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Finde alles was du suchst</h1>
+      <p>Entdecke tausende von Anzeigen in deiner Nähe</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn">Anzeige erstellen</a>
+        <a href="#kategorien" class="btn">Kategorien entdecken</a>
       </div>
     </div>
-  </section>
+    <!-- Illustration removed for static site; background color conveys pastel look -->
+  </header>
 
-  <!-- ===== Skills ===== -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>JavaScript / TypeScript</li><li>React &amp; Next.js</li><li>Node.js &amp; Express</li>
-        <li>Python &amp; Django</li><li>SQL &amp; NoSQL</li><li>AWS / Docker / CI‑CD</li>
-      </ul>
+  <!-- Categories section -->
+  <section class="categories" id="kategorien">
+    <h2>Kategorien</h2>
+    <div class="grid">
+      <div class="category" style="background-color:#DAF5F0;">Fahrzeuge &amp; Motoren</div>
+      <div class="category" style="background-color:#B5D2AD;">Elektronik &amp; Technik</div>
+      <div class="category" style="background-color:#FDDF96;">Haus, Garten &amp; DIY</div>
+      <div class="category" style="background-color:#F8D6B3;">Mode &amp; Accessoires</div>
+      <div class="category" style="background-color:#FCDFFF;">Schmuck &amp; Uhren</div>
+      <div class="category" style="background-color:#E3DFF2;">Gesundheit &amp; Schönheit</div>
+      <div class="category" style="background-color:#A7DBD8;">Sport, Freizeit &amp; Outdoor</div>
+      <div class="category" style="background-color:#BAFCA2;">Spielzeug, Spiele &amp; Kinder</div>
+      <div class="category" style="background-color:#FFDB58;">Bücher, Medien &amp; Musik</div>
+      <div class="category" style="background-color:#FFA07A;">Sammlerstücke, Kunst &amp; Antiquitäten</div>
+      <div class="category" style="background-color:#FFC0CB;">Büro &amp; Industrie</div>
+      <div class="category" style="background-color:#C4A1FF;">Tierbedarf</div>
+      <div class="category" style="background-color:#87CEEB;">Lebensmittel &amp; Getränke</div>
+      <div class="category" style="background-color:#90EE90;">Tickets, Reisen &amp; Dienstleistungen</div>
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>Have a project in mind or just want to say hi? Drop me a line and let's chat.</p>
-      <a href="mailto:hello@filipeandrade.com" class="btn">hello@filipeandrade.com</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <small>© <span id="year"></span> Filipe Andrade. All rights reserved.</small>
-    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Filipe Andrade. Alle Rechte vorbehalten.</p>
   </footer>
-
-  <script>
-    /* Year & mobile nav toggle */
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.menu‑toggle');
-    const nav = document.getElementById('navbar');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
-  </script>
 </body>
 </html>
